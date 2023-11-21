@@ -78,6 +78,8 @@ Our results and findings are documented in the `results/` directory. We present 
 
 We welcome contributions, feedback, and collaboration from the community. Feel free to open issues and pull requests.
 
+## Resources
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
