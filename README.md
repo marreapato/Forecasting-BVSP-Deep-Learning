@@ -74,6 +74,7 @@ Our results and findings are documented in the `results/` directory. We present 
 ## Contributors
 
 - [Lucas Rabelo](https://github.com/marreapato)
+- [Eliaquim Moreira](https://github.com/marreapato)
 
 We welcome contributions, feedback, and collaboration from the community. Feel free to open issues and pull requests.
 
