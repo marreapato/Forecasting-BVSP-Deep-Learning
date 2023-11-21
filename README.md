@@ -32,20 +32,19 @@ In this repository, you will find:
 To get started, you'll need to set up your environment and install the necessary dependencies. Here's how you can do it:
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/brazilian-stock-market-forecast.git
+import yfinance as yf
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+from keras.models import Sequential
+from keras.layers import Dense, LSTM, GRU# captum (biblioteca de interpretação pytorch)
+import matplotlib.pyplot as plt
+from sklearn.metrics import mean_squared_error
 
-# Navigate to the project directory
-cd brazilian-stock-market-forecast
+# Download data for the stock (I'm using the Bovespa index as an example)
+data = yf.download('^BVSP', '2007-01-01', '2023-10-17')
+data = data[['Close']]
 
-# Create a virtual environment (recommended)
-python -m venv venv
-
-# Activate the virtual environment
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ## Usage
