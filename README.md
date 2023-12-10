@@ -49,23 +49,17 @@ data = data[['Close']]
 
 ## Usage
 
-We've designed this project with ease of use in mind. You can find example notebooks and scripts in the `examples/` directory that demonstrate how to train models, make forecasts, and generate explanations.
-
-For a quick start, you can run the following commands:
-
-- To train a model: `python train_model.py`
-- To make predictions: `python make_predictions.py`
-- To generate explanations: `python generate_explanations.py`
+We've designed this project with ease of use in mind. You can find example notebooks and scripts that demonstrate how to train models, make forecasts, and generate explanations.
 
 ## Data
 
-Our project relies on historical financial data. We have used data from reputable sources, and you can find details in the `data/` directory.
+Our project relies on historical financial data. We have used data from reputable sources, and you can find details in the [Yahoo Finance Website](https://finance.yahoo.com/)
 
 We strongly encourage users to respect data licensing and usage restrictions when working with financial data.
 
 ## Methods
 
-We have employed various Deep Learning techniques, including recurrent neural networks (RNNs), convolutional neural networks (CNNs), and hybrid models. Additionally, we have used XAI methods like SHAP (SHapley Additive exPlanations) to provide insights into model predictions.
+We have employed various Deep Learning techniques, including gated recurrent unit neural networks (GRUs), long short term neural networks (LSTMs), and hybrid models. Additionally, we have used XAI methods like LIME and Feature Importance to provide insights into model predictions.
 
 ## Results
 
