@@ -1,35 +1,34 @@
-# Brazilian Stock Market Index Forecasting with Deep Learning and XAI
+# Previsão do Índice da Bolsa de Valores Brasileira com Aprendizado Profundo e Interpretação Explicável de IA
 
-Welcome to our project repository! This project was developed as part of the Master's degree program in Computer Science at the Federal University of Pernambuco. In this repository, we present our work on forecasting the Brazilian stock market index using Deep Learning techniques and eXplainable Artificial Intelligence (XAI) methods to interpret and explain the forecasts.
+Bem-vindo ao repositório do nosso projeto! Este projeto foi desenvolvido como parte do programa de mestrado em Ciência da Computação na Universidade Federal de Pernambuco. Neste repositório, apresentamos nosso trabalho na previsão do índice da bolsa de valores brasileira usando técnicas de Aprendizado Profundo e métodos de Inteligência Artificial Explicável (IAE) para interpretar e explicar as previsões.
 
-## Table of Contents
+## Sumário
 
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data](#data)
-- [Methods](#methods)
-- [Results](#results)
-- [Contributors](#contributors)
-- [License](#license)
+- [Introdução](#introdução)
+- [Visão Geral do Projeto](#visão-geral-do-projeto)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Dados](#dados)
+- [Métodos](#métodos)
+- [Resultados](#resultados)
+- [Contribuidores](#contribuidores)
 
-## Introduction
+## Introdução
 
-In the realm of financial markets, predicting stock market indices is a challenging and critical task. This project aims to leverage the power of Deep Learning and XAI techniques to make accurate forecasts of the Brazilian stock market index. Our focus is not only on making predictions but also on providing transparent and interpretable explanations for those predictions.
+No cenário dos mercados financeiros, prever índices de bolsa de valores é uma tarefa desafiadora e crucial. Este projeto visa aproveitar o poder do Aprendizado Profundo e técnicas de IA Explicável para fazer previsões precisas do índice da bolsa de valores brasileira. Nosso foco não está apenas em fazer previsões, mas também em fornecer explicações transparentes e interpretáveis para essas previsões.
 
-## Project Overview
+## Visão Geral do Projeto
 
-In this repository, you will find:
+Neste repositório, você encontrará:
 
-- Python code for our Deep Learning models and XAI methods.
-- Jupyter notebooks illustrating the entire data preprocessing, model training, and explanation generation pipeline.
-- Data sources and data preprocessing scripts.
-- Documentation and tutorials on how to use our code and replicate our experiments.
+- Código em Python para nossos modelos de Aprendizado Profundo e métodos de IA Explicável.
+- Notebooks Jupyter ilustrando todo o processo de pré-processamento de dados, treinamento de modelos e geração de explicações.
+- Fontes de dados e scripts de pré-processamento de dados.
+- Documentação e tutoriais sobre como usar nosso código e replicar nossos experimentos.
 
-## Installation
+## Instalação
 
-To get started, you'll need to set up your environment and install the necessary dependencies. Here's how you can do it:
+Para começar, você precisará configurar seu ambiente e instalar as dependências necessárias. Veja como fazer isso:
 
 ```bash
 import yfinance as yf
@@ -37,45 +36,82 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
-from keras.layers import Dense, LSTM, GRU# captum (biblioteca de interpretação pytorch)
+from keras.layers import Dense, LSTM, GRU  # captum (biblioteca de interpretação pytorch)
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error
 
-# Download data for the stock (I'm using the Bovespa index as an example)
-data = yf.download('^BVSP', '2007-01-01', '2023-10-17')
-data = data[['Close']]
-
+# Baixe os dados da ação (estou usando o índice Bovespa como exemplo)
+dados = yf.download('^BVSP', '2007-01-01', '2023-10-17')
+dados = dados[['Close']]
 ```
 
-## Usage
+## Uso
 
-We've designed this project with ease of use in mind. You can find example notebooks and scripts that demonstrate how to train models, make forecasts, and generate explanations.
+Projetamos este projeto pensando na facilidade de uso. Você encontrará notebooks de exemplo e scripts que demonstram como treinar modelos, fazer previsões e gerar explicações.
 
-## Data
+## Dados
 
-Our project relies on historical financial data. We have used data from reputable sources, and you can find details in the [Yahoo Finance Website](https://finance.yahoo.com/)
+Nosso projeto depende de dados financeiros históricos. Utilizamos dados de fontes confiáveis, e você pode encontrar detalhes no [site do Yahoo Finance](https://finance.yahoo.com/).
 
-We strongly encourage users to respect data licensing and usage restrictions when working with financial data.
+Incentivamos fortemente os usuários a respeitar as licenças de dados e as restrições de uso ao trabalhar com dados financeiros.
 
-## Methods
+## Métodos
 
-We have employed various Deep Learning techniques, including gated recurrent unit neural networks (GRUs), long short term neural networks (LSTMs), and hybrid models. Additionally, we have used XAI methods like LIME and Feature Importance to provide insights into model predictions.
+Empregamos várias técnicas de Aprendizado Profundo, incluindo redes neurais com unidades recorrentes gated (GRUs), redes neurais de memória de curto e longo prazo (LSTMs) e modelos híbridos. Além disso, utilizamos métodos de IA Explicável como LIME e Importância de Features para fornecer insights sobre as previsões do modelo.
 
-## Results
+## Resultados
 
-Our results and findings are documented in the `results/` directory. We present evaluation metrics, visualizations, and interpretations of our models' predictions. We hope you find our results insightful and informative.
+Nossos resultados e descobertas estão documentados no diretórios `Modelos_Deep/` e `Modelos_Hibridos/`. Apresentamos métricas de avaliação, visualizações e interpretações das previsões de nossos modelos. Esperamos que você ache nossos resultados esclarecedores e informativos.
 
-## Contributors
+## Contribuidores
 
 - [Lucas Rabelo](https://github.com/marreapato)
 - [Eliaquim Moreira](https://github.com/marreapato)
 
-We welcome contributions, feedback, and collaboration from the community. Feel free to open issues and pull requests.
+Agradecemos contribuições, feedback e colaboração da comunidade. Sinta-se à vontade para abrir problemas e solicitações de pull.
+  
 
-## Resources
+# Informações Principais
 
-## License
+**Instituto:** CIN; **Universidade:** UFPE; **Local:** PE, Brasil
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Introdução
 
-Thank you for exploring our project! We hope our work inspires and assists you in your deep learning and financial forecasting endeavors. If you have any questions or suggestions, please don't hesitate to reach out. Happy forecasting! 📈✨
+O mercado financeiro brasileiro tem apresentado um crescimento nos últimos anos, com diversas flutuações e desequilíbrios. Considerando a série temporal do índice Bovespa, é crucial analisar fatores como políticas governamentais, condições econômicas e eventos globais. Este projeto visa utilizar modelos LSTM e GRU para prever o índice Bovespa, incorporando técnicas de interpretabilidade, como a importância de features, análise de erros, LIME e Valores Shapley. A comparação com um baseline ingênuo fortalece a robustez da análise de séries temporais financeiras.
+
+## Metodologia
+
+### Modelos de Redes Neurais (LSTM e GRU)
+
+Os modelos utilizam lags dos 6 dias anteriores como features. A arquitetura inclui camadas LSTM e GRU com 128 unidades. O treinamento ocorre por 300 épocas. A normalização MinMax é aplicada apenas nos dados de treinamento. Os modelos são avaliados em diferentes janelas de tempo de 3, 7 e 15 dias no futuro.
+
+### Modelo ARIMA
+
+O modelo ARIMA é escolhido automaticamente usando a função auto\_arima da biblioteca pmdarima. Ele utiliza critérios como AIC e BIC para avaliar o ajuste de diferentes combinações de hiperparâmetros.
+
+### Modelos Híbridos
+
+Um modelo híbrido proposto por Zhang combina ARIMA e redes neurais. O ARIMA analisa a parte linear, enquanto a rede neural modela os resíduos não lineares do ARIMA.
+
+## Métricas de Erro e Avaliação
+
+As métricas de erro incluem RMSE, MAE, MASE e MAPE. A seleção de modelos é baseada em RMSE e MASE, visando modelos com desempenho superior ao baseline.
+
+## Resultados e Discussão
+
+O modelo LSTM destaca-se como o mais eficaz, apresentando melhor desempenho em diversas métricas. Os modelos híbridos têm desempenho inferior ao LSTM e GRU. A interpretabilidade é abordada por meio de análise de lags, Shapley Values e LIME.
+
+## Conclusão
+
+O modelo LSTM é identificado como a melhor escolha para previsões do índice Bovespa. A interpretabilidade é considerada, fornecendo insights valiosos sobre as contribuições de diferentes lags. O uso de modelos híbridos mostra limitações em comparação com abordagens puramente baseadas em redes neurais. O trabalho contribui para a compreensão de séries temporais financeiras e aprimora a aplicação de modelos LSTM nesse contexto.
+
+## Referências
+
+- Velarde, G. et al. (2022). An Open Source and Reproducible Implementation of LSTM and GRU Networks for Time Series Forecasting. Eng. Proc. 2022, 18, 30.
+
+- Zhang, G.P. (2003). Time series forecasting using a hybrid ARIMA and neural network model. Neurocomputing, 50, 159-175.
+
+- Hyndman, R.; Athanasopoulos, G. Forecasting: Principles and Practice. 3rd ed. Melbourne, Australia: OTexts, 2021. Acessado em: 19/05/2022. Disponível em: [https://otexts.com/fpp3/](https://otexts.com/fpp3/).
+
+
+Happy forecasting! 📈✨
