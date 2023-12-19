@@ -17,7 +17,7 @@ Bem-vindo ao repositório do nosso projeto! Este projeto foi desenvolvido como p
 
 No cenário dos mercados financeiros, prever índices de bolsa de valores é uma tarefa desafiadora e crucial. Este projeto visa aproveitar o poder do Aprendizado Profundo e técnicas de IA Explicável para fazer previsões precisas do índice da bolsa de valores brasileira. Nosso foco não está apenas em fazer previsões, mas também em fornecer explicações transparentes e interpretáveis para essas previsões.
 
-Os scripts se encontram em Modelos_Deep para as redes neurais Deep Learning e Modelos_Hibridos para os modelos Híbridoa Arima.
+Os scripts se encontram em Modelos_Deep para as redes neurais Deep Learning e Modelos_Hibridos para os modelos Híbridos Arima.
 
 ## Visão Geral do Projeto
 
